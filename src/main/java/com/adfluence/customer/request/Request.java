@@ -11,7 +11,9 @@ import lombok.*;
 @Setter
 public class Request{
 
+    private String customerName;
     private String category;
     private String budget;
     private RegionData regionData;
+
 }
