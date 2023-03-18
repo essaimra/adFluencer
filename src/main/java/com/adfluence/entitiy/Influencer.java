@@ -1,2 +1,41 @@
-package com.adfluence.entitiy;public class Influencer {
+package com.adfluence.entitiy;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
+@Table(name = "INFLUENCER")
+public class Influencer{
+
+    @Id
+    @Column(name = "INFLUENCER_ID")
+    private String influencerId;
+
+    @Column(name = "NAME")
+    private String name;
+
+    @Column(name = "PHONE")
+    private String phone;
+
+    @Column(name = "INSTAGRAM_PAGE")
+    private String instagramPage;
+
+    @Column(name = "MAIL")
+    private String mail;
+
+    @Column(name = "CATEGORY")
+    private String category;
+
+
 }
