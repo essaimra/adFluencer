@@ -9,7 +9,7 @@ spring:
     driverClassName: oracle.jdbc.OracleDriver
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
 
   application:
     name:
