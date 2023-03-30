@@ -1,0 +1,7 @@
+{
+  "id" : "rating",
+  "region" : {
+    "policy" : "all"
+  },
+  "startTime" : "2015-01-01 12:00:00"
+}

@@ -37,5 +37,8 @@ public class Influencer{
     @Column(name = "CATEGORY")
     private String category;
 
+    @Column(name = "RATING")
+    private int rating;
+
 
 }

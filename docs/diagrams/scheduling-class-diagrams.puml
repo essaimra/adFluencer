@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+    class Schedule{
+        + String id
+        + Region region
+        + Date startTime
+    }
+
+    abstract class AbstractScheduler{
+        + List<Resource> resources
+    }
+
+    class TimeScheduler extends AbstractScheduler{
+
+    }
+
+
+    class BackGroundTask implements Runnable{
+       + public void run()
+    }
+
+
+    BackGroundTask *-- AbstractScheduler
+
+
+
+
+
+@enduml

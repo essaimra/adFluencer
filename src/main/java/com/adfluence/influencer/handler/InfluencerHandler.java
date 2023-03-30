@@ -29,6 +29,7 @@ public class InfluencerHandler{
                 .category(data.getCategory())
                 .instagramPage(data.getInstagramPage())
                 .mail(data.getMail())
+                .rating(0)
                 .build();
 
         influencerRepository.save(influencer);
