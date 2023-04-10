@@ -9,10 +9,12 @@
 
     abstract class AbstractScheduler{
         + List<Resource> resources
+        + public abstract void runJobs()
     }
 
     class TimeScheduler extends AbstractScheduler{
-
+        + List<Job> jobs
+        + public void runJobs()
     }
 
 
@@ -20,8 +22,19 @@
        + public void run()
     }
 
+    class Job{
+        + Resource resource
+        + public boolean inTimeSlot();
+    }
+
 
     BackGroundTask *-- AbstractScheduler
+    TimeScheduler *-- Job
+    Job *-- Schedule
+
+
+@enduml
+
 
 
 

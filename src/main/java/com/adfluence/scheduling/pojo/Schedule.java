@@ -21,19 +21,5 @@ public class Schedule extends Resource{
 
     private String id;
     private Region region;
-    private String startTime;
-
-
-    public Date getDate(){
-        final String DEFAULT_PATTERN = "yyyy-MM-dd HH:mm:ss";
-        DateFormat dateFormat = new SimpleDateFormat(DEFAULT_PATTERN);
-        Date date = null;
-        try {
-            date = dateFormat.parse(startTime);
-        }catch (ParseException e){
-            e.printStackTrace();
-        }
-        return date;
-    }
 
 }
