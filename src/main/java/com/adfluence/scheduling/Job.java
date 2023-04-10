@@ -6,6 +6,10 @@ public class Job{
 
     private Resource resource;
 
+    public Job(Resource resource){
+        this.resource = resource;
+    }
+
     public Resource getResource() {
         return resource;
     }
