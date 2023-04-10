@@ -10,6 +10,8 @@ public class BackGroundTask implements Runnable{
 
     @Override
     public void run() {
-        scheduler.runJobs();
+        while (!scheduler.noJobsMore()) {
+            scheduler.runJobs();
+        }
     }
 }

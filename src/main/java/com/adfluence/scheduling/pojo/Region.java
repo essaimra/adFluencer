@@ -2,15 +2,13 @@ package com.adfluence.scheduling.pojo;
 
 
 import com.adfluence.resources.loader.Resource;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
 @Getter
+@ToString
 public class Region extends Resource{
     private String policy;
 }

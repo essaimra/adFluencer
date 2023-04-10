@@ -1,8 +1,6 @@
 package com.adfluence.scheduling;
 
 
-import java.util.Queue;
-
 /**
  * this class is responsible for scheduling a configuration to run rating for the influencers.
  * */
@@ -15,5 +13,9 @@ public abstract class AbstractScheduler{
     }
 
     public abstract void runJobs();
+
+    public boolean noJobsMore(){
+        return jobs.isEmpty();
+    }
 
 }

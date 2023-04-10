@@ -17,4 +17,9 @@ public class Job{
     public void setResource(Resource resource) {
         this.resource = resource;
     }
+
+    @Override
+    public String toString(){
+        return resource.toString();
+    }
 }

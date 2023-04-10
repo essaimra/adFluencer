@@ -1,10 +1,14 @@
 package com.adfluence.resources.loader;
 
+import lombok.ToString;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
+@ToString
 public class Resource{
 
     protected String startTime;
