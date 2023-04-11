@@ -15,8 +15,6 @@ i
 9src/main/java/com/adfluence/customer/request/Request.java,7\a\7a4a500dc692509030555ce9c29785cfedcdb32f
 e
 5src/main/java/com/adfluence/AdFluenceApplication.java,a\d\adce79260fe5684a2abd150d382dc34367bbc42c
-n
->src/main/java/com/adfluence/controller/RegisterController.java,2\2\223c215651a65477e4885509d31d337193c30e8d
 o
 ?src/main/java/com/adfluence/recommend/TopKRecommendService.java,8\e\8ef13543d53a76a577ef3ef86816c7f00ef79f1d
 l

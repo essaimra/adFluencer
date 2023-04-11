@@ -11,3 +11,20 @@ advertisement from clients to influencers.
 ThreadPool
 
 ![image](https://user-images.githubusercontent.com/59146036/229315834-58296b0e-1d48-41d3-9bc2-3ad6821c2cd5.png)
+
+
+# Guide:
+
+to register customer.
+
+send this API-request:
+
+http://{{ip}}:8080/register
+
+{
+
+    "name" : "",
+    "mail" : "",
+    "phone" : ""
+
+}
