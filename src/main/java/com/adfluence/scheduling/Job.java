@@ -1,7 +1,9 @@
 package com.adfluence.scheduling;
 
 import com.adfluence.resources.loader.Resource;
+import lombok.ToString;
 
+@ToString
 public class Job{
 
     private Resource resource;
@@ -16,10 +18,5 @@ public class Job{
 
     public void setResource(Resource resource) {
         this.resource = resource;
-    }
-
-    @Override
-    public String toString(){
-        return resource.toString();
     }
 }

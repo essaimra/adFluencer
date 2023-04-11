@@ -1,19 +1,11 @@
 
-u
-Esrc/main/java/com/adfluence/influencer/handler/InfluencerHandler.java,4\4\44214585802c48f3263e31116fb436e4492eee35
 d
 4src/main/java/com/adfluence/entitiy/Interaction.java,3\4\349411400fee49ebeaac3bea3725db671a2e6712
 k
 ;src/main/java/com/adfluence/recommend/RecommendService.java,7\a\7a7b2adf91e16a2eaf6155ed62ef0036600189ef
 v
 Fsrc/main/java/com/adfluence/recommend/RegionBasedRecommendService.java,a\9\a94c966c0e0abf005aac58d73ce9a5b939eaddc6
-c
-3src/main/java/com/adfluence/entitiy/Influencer.java,3\d\3d8df0cbd058b19864f92576f2025cbaabb74def
-i
-9src/main/java/com/adfluence/customer/request/Request.java,7\a\7a4a500dc692509030555ce9c29785cfedcdb32f
 e
 5src/main/java/com/adfluence/AdFluenceApplication.java,a\d\adce79260fe5684a2abd150d382dc34367bbc42c
-l
-<src/main/java/com/adfluence/customer/request/RegionData.java,8\c\8c5f504214cfce740eae049a0dc502fe972d0c51
 p
 @src/main/java/com/adfluence/repository/InfluencerRepository.java,c\3\c3354c38ac50f3566f2e6436b5b092f5c9b0e10e
