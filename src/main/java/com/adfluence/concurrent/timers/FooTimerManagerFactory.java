@@ -30,6 +30,7 @@ public final class FooTimerManagerFactory extends AbstractFactory {
      *                   attempting to create an object, and no other object
      *                   factories are to be tried.
      */
+    @Override
     public Object getObjectInstance(Object obj, Name name, Context nameCtx,
                                     Hashtable environment) throws Exception {
 
