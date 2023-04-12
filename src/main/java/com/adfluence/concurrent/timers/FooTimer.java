@@ -25,7 +25,7 @@ public abstract class FooTimer implements Timer {
      * @param period    execution period
      * @param listener  the timer listener for this timer.
      */
-    public FooTimer(long startTime, long period, TimerListener listener) {
+    protected FooTimer(long startTime, long period, TimerListener listener) {
         scheduledExcecutionTime = startTime;
         this.period = period;
         this.listener = listener;
@@ -38,7 +38,7 @@ public abstract class FooTimer implements Timer {
 
 
     /**
-     * Execute the timer listner.
+     * Execute the timer listener.
      */
     public void execute() {
         listener.timerExpired(this);
