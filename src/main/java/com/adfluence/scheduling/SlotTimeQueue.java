@@ -8,7 +8,11 @@ import java.util.Queue;
 
 public class SlotTimeQueue{
 
-    private final Queue<Job> queue = new PriorityQueue<>(Comparator.comparing(o -> o.getResource().getDate()));
+    private final Queue<Job> queue;
+
+    public SlotTimeQueue(){
+        queue = new PriorityQueue<>(Comparator.comparing(o -> o.getResource().getDate()));
+    }
 
     public void add(Job job){
         queue.add(job);
