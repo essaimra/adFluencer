@@ -14,5 +14,5 @@ public interface CustomerRepository extends JpaRepository<Customer, String>{
 
     List<Customer> findByName(String name);
 
-    List<Customer> findByNameAndPhone(String name, String phone);
+    Customer findByNameAndPhone(String name, String phone);
 }

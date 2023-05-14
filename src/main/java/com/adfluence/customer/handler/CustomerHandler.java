@@ -47,4 +47,8 @@ public class CustomerHandler{
         return customerRepository.findByPhone(phone);
     }
 
+    public List<Customer> getCustomersByName(String name){
+        return customerRepository.findByName(name);
+    }
+
 }
