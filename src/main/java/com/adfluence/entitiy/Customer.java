@@ -27,7 +27,6 @@ public class Customer{
     private String name;
 
     @Column(name = "PHONE")
-    @Id
     private String phone;
 
     @Column(name = "MAIL")
