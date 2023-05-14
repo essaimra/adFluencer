@@ -19,7 +19,6 @@ C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\co
 C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\concurrent\util\PooledExecutor.java
 C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\recommend\RecommendService.java
 C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\scheduling\jobs\handlers\IScheduleHandler.java
-C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\scheduling\jobs\handlers\KillGC.java
 C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\concurrent\util\AbstractFactory.java
 C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\concurrent\util\AbstractManager.java
 C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\controller\RegisterController.java
@@ -32,6 +31,7 @@ C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\en
 C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\concurrent\timers\TimerExecutor.java
 C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\concurrent\util\Channel.java
 C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\concurrent\timers\OneShotTimer.java
+C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\controller\EntityFetcherController.java
 C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\scheduling\pojo\Region.java
 C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\concurrent\util\ThreadFactory.java
 C:\Users\omar.mahamid\Documents\GitHub\adFluencer\src\main\java\com\adfluence\concurrent\work\ResultCollector.java

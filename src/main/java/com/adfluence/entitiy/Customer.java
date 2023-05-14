@@ -11,6 +11,7 @@ import javax.persistence.Table;
 
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 @Builder
 @Getter
 @Setter
@@ -26,6 +27,7 @@ public class Customer{
     private String name;
 
     @Column(name = "PHONE")
+    @Id
     private String phone;
 
     @Column(name = "MAIL")
