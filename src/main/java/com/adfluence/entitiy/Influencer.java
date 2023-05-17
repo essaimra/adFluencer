@@ -41,5 +41,8 @@ public class Influencer{
     @Column(name = "RATING")
     private int rating;
 
+    @Column(name = "LIKE")
+    private int like;
+
 
 }

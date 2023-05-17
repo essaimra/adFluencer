@@ -1,10 +1,10 @@
 package com.adfluence.concurrent.timers;
 
+import com.adfluence.concurrent.util.AbstractManager;
+import com.adfluence.concurrent.util.ThreadPool;
 import commonj.timers.Timer;
 import commonj.timers.TimerListener;
 import commonj.timers.TimerManager;
-import com.adfluence.concurrent.util.AbstractManager;
-import com.adfluence.concurrent.util.ThreadPool;
 
 import java.util.ArrayList;
 import java.util.Date;

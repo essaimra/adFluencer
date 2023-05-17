@@ -7,6 +7,8 @@ import com.adfluence.repository.InfluencerRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Slice;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -35,6 +37,7 @@ public class InfluencerHandler{
                 .mail(data.getMail())
                 .phone(data.getPhone())
                 .rating(0)
+                .like(0)
                 .build();
 
         LOGGER.info("going to save influencer {}", influencer);
@@ -54,5 +57,10 @@ public class InfluencerHandler{
         LOGGER.info("going to fetch influencer by name {}", name);
 
         return influencerRepository.findByName(name);
+    }
+
+
+    public Slice<Influencer> getInfluencerSlice(int pageSize, PageRequest pageRequest){
+        return influencerRepository.findByChunck(pageRequest);
     }
 }

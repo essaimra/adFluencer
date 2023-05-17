@@ -1,7 +1,6 @@
 package com.adfluence.resources.loader;
 
 import com.adfluence.scheduling.serializer.Deserializer;
-
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
