@@ -2,8 +2,8 @@ package com.adfluence.services.influencer.handler;
 
 
 import com.adfluence.entitiy.Influencer;
-import com.adfluence.services.influencer.request.InfluencerData;
 import com.adfluence.services.influencer.repository.InfluencerRepository;
+import com.adfluence.services.influencer.request.InfluencerData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

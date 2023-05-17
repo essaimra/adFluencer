@@ -1,9 +1,9 @@
 package com.adfluence.services.customer.handler;
 
 
-import com.adfluence.services.customer.request.CustomerData;
 import com.adfluence.entitiy.Customer;
 import com.adfluence.services.customer.repository.CustomerRepository;
+import com.adfluence.services.customer.request.CustomerData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

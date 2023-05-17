@@ -1,7 +1,7 @@
 package com.adfluence.services.recommend;
 
-import com.adfluence.services.customer.request.Request;
 import com.adfluence.entitiy.Influencer;
+import com.adfluence.services.customer.request.Request;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

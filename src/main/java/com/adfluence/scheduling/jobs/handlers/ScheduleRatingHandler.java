@@ -1,7 +1,7 @@
 package com.adfluence.scheduling.jobs.handlers;
 
-import com.adfluence.services.rating.algorithm.RatingAlgorithm;
 import com.adfluence.scheduling.Job;
+import com.adfluence.services.rating.algorithm.RatingAlgorithm;
 import com.adfluence.util.SpringInjector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

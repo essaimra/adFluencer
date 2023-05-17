@@ -1,7 +1,7 @@
 package com.adfluence.services.recommend;
 
-import com.adfluence.services.customer.request.Request;
 import com.adfluence.entitiy.Influencer;
+import com.adfluence.services.customer.request.Request;
 import com.adfluence.services.influencer.repository.InfluencerRepository;
 import com.uber.h3core.H3Core;
 import org.slf4j.Logger;
