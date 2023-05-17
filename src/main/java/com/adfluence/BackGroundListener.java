@@ -6,21 +6,29 @@ import com.adfluence.scheduling.BackGroundTask;
 import com.adfluence.scheduling.Job;
 import com.adfluence.scheduling.SlotTimeQueue;
 import com.adfluence.scheduling.TimeScheduler;
+import com.adfluence.util.ThreadPool;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 @Service
 public class BackGroundListener implements ApplicationListener<ApplicationReadyEvent>{
 
     private final List<Resource> resources;
+    private final int threadPoolSize;
 
     @Autowired
-    public BackGroundListener(ResourceLoader resourceLoader){
+    public BackGroundListener(ResourceLoader resourceLoader, @Value("${THREAD_POOL_SIZE}") Integer threadPoolSize){
         this.resources = resourceLoader.getResources();
+        this.threadPoolSize = threadPoolSize;
     }
 
     @Override
@@ -34,11 +42,7 @@ public class BackGroundListener implements ApplicationListener<ApplicationReadyE
                     queue.add(job);
                 }
         );
-
-        Thread thread = new Thread(
-                new BackGroundTask(new TimeScheduler(queue))
-        );
-
-        thread.start();
+        ThreadPool threadPool = new ThreadPool(new ScheduledThreadPoolExecutor(threadPoolSize));
+        threadPool.submitScheduled(new BackGroundTask(new TimeScheduler(queue)), 5, TimeUnit.SECONDS);
     }
 }
