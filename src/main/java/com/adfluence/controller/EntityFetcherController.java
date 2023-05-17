@@ -1,10 +1,10 @@
 package com.adfluence.controller;
 
 
-import com.adfluence.customer.handler.CustomerHandler;
+import com.adfluence.services.customer.handler.CustomerHandler;
 import com.adfluence.entitiy.Customer;
 import com.adfluence.entitiy.Influencer;
-import com.adfluence.influencer.handler.InfluencerHandler;
+import com.adfluence.services.influencer.handler.InfluencerHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

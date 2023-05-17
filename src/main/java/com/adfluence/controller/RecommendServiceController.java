@@ -1,9 +1,9 @@
 package com.adfluence.controller;
 
 
-import com.adfluence.customer.request.Request;
+import com.adfluence.services.customer.request.Request;
 import com.adfluence.entitiy.Influencer;
-import com.adfluence.recommend.RecommendHandler;
+import com.adfluence.services.recommend.RecommendHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

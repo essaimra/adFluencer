@@ -19,8 +19,8 @@ import javax.persistence.Table;
 public class Likes{
 
     @Id
-    @Column(name = "LIKES_ID")
-    private String likesId;
+    @Column(name = "LIKE_ID")
+    private String likeId;
 
     @Column(name = "CUSTOMER_ID")
     private String customerId;

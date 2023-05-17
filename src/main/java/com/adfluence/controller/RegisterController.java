@@ -1,10 +1,10 @@
 package com.adfluence.controller;
 
 
-import com.adfluence.customer.handler.CustomerHandler;
-import com.adfluence.customer.request.CustomerData;
-import com.adfluence.influencer.handler.InfluencerHandler;
-import com.adfluence.influencer.request.InfluencerData;
+import com.adfluence.services.customer.handler.CustomerHandler;
+import com.adfluence.services.customer.request.CustomerData;
+import com.adfluence.services.influencer.handler.InfluencerHandler;
+import com.adfluence.services.influencer.request.InfluencerData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
