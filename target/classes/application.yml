@@ -9,8 +9,10 @@ spring:
     driverClassName: oracle.jdbc.OracleDriver
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
 
   application:
     name:
       ADFLUENCER
+
+PAGE_SIZE : 100

@@ -37,7 +37,7 @@ public class InfluencerHandler{
                 .mail(data.getMail())
                 .phone(data.getPhone())
                 .rating(0)
-                .like(0)
+                .numOfLikes(0)
                 .build();
 
         LOGGER.info("going to save influencer {}", influencer);
@@ -60,7 +60,12 @@ public class InfluencerHandler{
     }
 
 
-    public Slice<Influencer> getInfluencerSlice(int pageSize, PageRequest pageRequest){
+    public Slice<Influencer> getInfluencerSlice(PageRequest pageRequest){
         return influencerRepository.findByChunck(pageRequest);
+    }
+
+
+    public void updateInfluencer(Influencer influencer){
+        this.influencerRepository.save(influencer);
     }
 }

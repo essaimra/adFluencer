@@ -39,10 +39,8 @@ public class Influencer{
     private String category;
 
     @Column(name = "RATING")
-    private int rating;
+    private double rating;
 
-    @Column(name = "LIKE")
-    private int like;
-
-
+    @Column(name = "NUM_OF_LIKES")
+    private int numOfLikes;
 }
