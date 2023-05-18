@@ -16,6 +16,10 @@ advertisement from clients to influencers.
 ![image](https://user-images.githubusercontent.com/59146036/224485206-116c6645-0077-4df7-949b-678e46a5b7ca.png)
 
 
+### Message Queue (For Async Tasks)
+![img2.png](docs/img/img_2.png)
+
+
 ### Rating Algorithm:
 
 The rating algorithm processed in Asynchronous task every week (can configured).
