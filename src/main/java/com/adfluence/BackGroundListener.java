@@ -21,12 +21,16 @@ import java.util.concurrent.TimeUnit;
 public class BackGroundListener implements ApplicationListener<ApplicationReadyEvent>{
 
     private final List<Resource> resources;
-    private final int threadPoolSize;
+    private final Integer threadPoolSize;
+    private final Integer delayTime;
 
     @Autowired
-    public BackGroundListener(ResourceLoader resourceLoader, @Value("${THREAD_POOL_SIZE}") Integer threadPoolSize){
+    public BackGroundListener(ResourceLoader resourceLoader,
+                              @Value("${THREAD_POOL_SIZE}") Integer threadPoolSize,
+                              @Value("${DELAY_TIME}") Integer delayTime){
         this.resources = resourceLoader.getResources();
         this.threadPoolSize = threadPoolSize;
+        this.delayTime = delayTime;
     }
 
     @Override
@@ -41,6 +45,6 @@ public class BackGroundListener implements ApplicationListener<ApplicationReadyE
                 }
         );
         ThreadPool threadPool = new ThreadPool(new ScheduledThreadPoolExecutor(threadPoolSize));
-        threadPool.submitScheduled(new BackGroundTask(new TimeScheduler(queue)), 5, TimeUnit.SECONDS);
+        threadPool.submitScheduled(new BackGroundTask(new TimeScheduler(queue)), delayTime, TimeUnit.SECONDS);
     }
 }
