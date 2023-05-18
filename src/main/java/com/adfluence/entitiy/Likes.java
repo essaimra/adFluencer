@@ -1,15 +1,14 @@
 package com.adfluence.entitiy;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
 @ToString
 @Getter
