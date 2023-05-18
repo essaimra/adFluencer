@@ -1,4 +1,4 @@
-package com.adfluence.services.customer.request;
+package com.adfluence.services.recommend.request;
 
 
 import lombok.*;
