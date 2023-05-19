@@ -37,6 +37,8 @@ public class InfluencerHandler{
                 .mail(data.getMail())
                 .phone(data.getPhone())
                 .rating(0)
+                .country(data.getCountry())
+                .city(data.getCity())
                 .numOfLikes(0)
                 .build();
 

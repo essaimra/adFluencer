@@ -41,6 +41,12 @@ public class Influencer{
     @Column(name = "RATING")
     private double rating;
 
+    @Column(name = "COUNTRY")
+    private String country;
+
+    @Column(name = "CITY")
+    private String city;
+
     @Column(name = "NUM_OF_LIKES")
     private int numOfLikes;
 }

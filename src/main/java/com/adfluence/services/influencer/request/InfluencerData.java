@@ -17,4 +17,6 @@ public class InfluencerData{
     private String instagramPage;
     private String phone;
     private String category;
+    private String country;
+    private String city;
 }
