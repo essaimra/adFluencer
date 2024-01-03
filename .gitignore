@@ -1,6 +1,5 @@
 logs/*
 tmp/
-target/
 logs/
 .idea/
 *.iml
